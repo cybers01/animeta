@@ -9,6 +9,7 @@ import WeeklyChart from '../ui/WeeklyChart';
 import PostComment from '../ui/PostComment';
 import LoadMore from '../ui/LoadMore';
 import Styles from '../../less/index.less';
+// TODO: css module
 
 class Index extends React.Component {
     state = {
