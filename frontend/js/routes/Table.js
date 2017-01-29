@@ -100,12 +100,12 @@ class StatusButton extends React.Component {
                 {record.status && <span className="episode">@ {util.getStatusDisplay(record)}</span>}
             </Link>;
         } else {
-            return <a className={Styles.favoriteButtonNormal}
-                href={'/records/add/' + encodeURIComponent(this.props.item.title) + '/'}
+            return <Link className={Styles.favoriteButtonNormal}
+                to={'/records/add/' + encodeURIComponent(this.props.item.title) + '/'}
                 onClick={this._onFavorite}>
                 <i className="fa fa-plus" />
                 작품 추가
-            </a>;
+            </Link>;
         }
     }
 

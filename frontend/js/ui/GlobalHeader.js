@@ -29,7 +29,6 @@ class DropdownUserMenu extends React.Component {
     }
 
     render() {
-        const {Link} = this.props;
         return <div className={Styles.userMenu}
             onClick={e => e.stopPropagation()}>
             <RouterLink to={`/users/${this.props.user.name}/`}>기록 관리</RouterLink>

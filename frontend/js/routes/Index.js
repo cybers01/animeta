@@ -48,7 +48,7 @@ class Index extends React.Component {
     _renderPost(post) {
         return <div className={Styles.post}>
             <div className="meta">
-                <a href={'/users/' + post.user.name + '/'} className="user">{post.user.name}</a>
+                <Link to={'/users/' + post.user.name + '/'} className="user">{post.user.name}</Link>
                 <i className="fa fa-caret-right separator" />
                 <Link to={util.getWorkURL(post.record.title)} className="work">{post.record.title}</Link>
                 {post.status &&
